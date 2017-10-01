@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Obsequiarte</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/estilo1.css" rel="stylesheet">
+     <link href="css/modal.css" rel="stylesheet">
+     <meta charset="utf-8">
+    </style>
+  </head>
+  <body>
+    <!--1.Modal1  -->
+            <div class="modal fade" id="registro" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+                    <div class="modal-dialog">
+                    <div class="loginmodal-container">
+                      <h1>Registro</h1><br>
+                      <form>
+                      <label>Nombre Completo</label>
+                      <input type="text" name="nombre" placeholder="" required>
+                      <label>Direccion</label>
+                      <input type="text" name="direccion" placeholder="" required>
+                       <label>Correo</label>
+                      <input type="email" name="correo" placeholder="" required>
+                      <label>Telefono</label>
+                      <input type="tel" name="telefono" placeholder="" required>
+                        <label>Contraseña</label>
+                      <input type="password" name="password" placeholder="" required>
+                      <label>Confirmacion de contraseña</label>
+                      <input type="text" name="Confirmacion" placeholder="" required>
+                      <input type="submit" name="login" class="btn btn-success" value="Registrarse">
+                      </form>
+                    </div>
+                  </div>
+                  </div>
+    <!-- 2.Modal -->
+     <div class="modal fade" id="contacto" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+                          <div class="modal-dialog">
+                          <div class="loginmodal-container">
+                            <h1>Contacto</h1><br>
+                            <div class="alert alert-dark">
+                              <strong>Informacion!</strong> Para cualquier inquietud este es el lugar.
+                            </div>
+                            <form>
+                             <label>Nombre completo</label>
+                            <input type="text" name="user" placeholder="" required>
+                             <label>Correo</label>
+                            <input type="email" name="user" placeholder="" required>
+
+                            <div class="form-group"> 
+                          <label for="city_id" class="control-label">Mensaje</label>
+                          <textarea class="form-control" rows="5" name="mensaje" placeholder=""></textarea>
+                          </div>
+
+                            <input type="submit" name="login" class="btn btn-success" value="Contactar">
+                            </form>
+
+                          </div>
+                        </div>
+                        </div>             
+
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="index.html"></a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" class="btn btn-primary center-block" href="">Obsequiarte</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Quienes Somos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Productos</a>
+            </li>
+            <li class="nav-item">
+           <a  class="nav-link" href="#" data-toggle="modal" data-target="#contacto">Contacto</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" >Iniciar Sesion</a>
+            </li>
+             <li class="nav-item">
+                  <a class="nav-link" href="#" data-toggle="modal" data-target="#registro">Registrarse</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <header>
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+       
+          <div class="carousel-item active" style="background-image: url('imagenes/banners/banner1.jpg')">
+            <div class="carousel-caption d-none d-md-block">
+            </div>
+          </div>
+
+          <div class="carousel-item" style="background-image: url('imagenes/banners/banner2.jpg')">
+            <div class="carousel-caption d-none d-md-block">
+            </div>
+          </div>
+
+          <div class="carousel-item" style="background-image: url('imagenes/banners/banner5.jpg')">
+            <div class="carousel-caption d-none d-md-block">
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </header>
+
+    <!-- Contenido de mi pagina sergio -->
+    <div class="container" id="contenido">
+
+      <h1 class="my-4">Bienvenidos Obsequiarte</h1>     
+      <h2>Lista de obsequios</h2>
+
+      <div class="row">
+        <div class="col-lg-4 col-sm-6 portfolio-item">
+          <div class="card h-100">
+            <a href="#"><img class="card-img-top" src="imagenes/productos/producto1.jpg" alt=""></a>
+            <div class="card-body">
+              <h4 class="card-title">
+                <a href="#">Regalo envuelto</a>
+              </h4>
+              <p class="card-text">¡Es una buena opcion para sentir de manera especial a esa persona que mas quieres contiene una bonita prenda que hace lucido el detalle!</p>
+              <ul>
+                <li>$35000</li>
+              </ul>
+            </div>
+            <div class="card-footer">
+              <a href="#" class="btn btn-primary">Añadir al carrito</a>
+              <button class="btn btn-secondary" onclick="cargarAjax('producto1.html')">Ver mas </button>
+          </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6 portfolio-item">
+          <div class="card h-100">
+            <a href="#"><img class="card-img-top" src="imagenes/productos/producto2.jpg" alt=""></a>
+            <div class="card-body">
+              <h4 class="card-title">
+                <a href="#">Dulce de fresa</a>
+              </h4>
+              <p class="card-text">¡SI quieres algo con sabor a fresa pura este es el dulce ideal , es un rico y delicioso dulce de fresa que te recordara que la fresa es uno de los mejores frutos rojos!</p>
+              <ul>
+                <li>$25000</li>
+              </ul>
+            </div>
+            <div class="card-footer">
+              <a href="#" class="btn btn-primary">Añadir al carrito</a>
+              <a href="#" class="btn btn-secondary" onclick="cargarAjax('producto2.html')">Ver mas</a>
+          </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6 portfolio-item">
+          <div class="card h-100">
+            <a href="#"><img class="card-img-top" src="imagenes/productos/producto3.jpg" alt=""></a>
+            <div class="card-body">
+              <h4 class="card-title">
+                <a href="#">Candy tin box </a>
+              </h4>
+              <p class="card-text">¡Rico y delicioso dulce que un momento normal se convierta  en un recuerdo inolvidable !</p>
+              <ul>
+                <li>$25000</li>
+              </ul>
+            </div>
+            <div class="card-footer">
+              <a href="#" class="btn btn-primary">Añadir al carrito</a>
+              <a href="#" class="btn btn-secondary" onclick="cargarAjax('producto3.html')" >Ver mas</a>
+          </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6 portfolio-item">
+          <div class="card h-100">
+            <a href="#"><img class="card-img-top" src="imagenes/productos/producto4.jpg" alt=""></a>
+            <div class="card-body">
+              <h4 class="card-title">
+                <a href="#">Dulces formales</a>
+              </h4>
+              <p class="card-text">!Excelentes  dulces con un toque de formalidad que sera seguro un detalle novedoso y casual¡</p>
+              <ul>
+                <li>$35000</li>
+              </ul>
+            </div>
+            <div class="card-footer">
+              <a href="#" class="btn btn-primary">Añadir al carrito</a>
+              <a href="#" class="btn btn-secondary" onclick="cargarAjax('producto4.html')" >Ver mas</a>
+          </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6 portfolio-item">
+          <div class="card h-100">
+            <a href="#"><img class="card-img-top" src="imagenes/productos/producto5.jpg" alt=""></a>
+            <div class="card-body">
+              <h4 class="card-title">
+                <a href="#">Fresa con champilli</a>
+              </h4>
+              <p class="card-text">!Cudando quieras una experiencia agradable con algun fruto rojo que te deje sin alientos la fresa con champilli de seguro sera la respuestas a tu necesidad¡</p>
+               <ul>
+                <li>$20000</li>
+              </ul>
+            </div>
+            <div class="card-footer">
+              <a href="#" class="btn btn-primary">Añadir al carrito</a>
+              <a href="#" class="btn btn-secondary" onclick="cargarAjax('producto5.html')">Ver mas</a>
+          </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6 portfolio-item">
+          <div class="card h-100">
+            <a href="#"><img class="card-img-top" src="imagenes/productos/producto6.jpg" alt=""></a>
+            <div class="card-body">
+              <h4 class="card-title">
+                <a href="#">Dulce Six</a>
+              </h4>
+              <p class="card-text">!Que mas rico y apasionante que  los dulces six de seguro tu paladar disgustara como los dioses !</p>
+                <ul>
+                <li>$30000</li>
+              </ul>
+            </div>
+            <div class="card-footer">
+              <a href="#" class="btn btn-primary" >Añadir al carrito</a>
+               <a href="#" class="btn btn-secondary" onclick="cargarAjax('producto6.html')">Ver mas</a>
+          </div>
+          </div>
+        </div>
+      </div>  
+      <hr>
+    </div>
+    <footer>
+     <div class="container">
+         <div class="row">
+                    <div id="gobierno"class="col-md-4 col-xs-12 text-center" style="margin-right: -45px;">
+                        <a href="#" target="_blank"><img src="imagenes/footer/gobierno.png" style="height: 100px;"></a>
+                    </div>
+                    <div class="col-md-3 col-xs-12 text-center" style="margin-right: -30px;">
+                        <a href="#" target="_blank"><img src="imagenes/footer/codaltec.png" style="height: 100px;"></a>
+                    </div>
+                    <div class="col-md-2 col-xs-12 text-center">
+                        <a href="#" target="_blank"><img src="imagenes/footer/camara.png" style="height: 100px;"></a>
+                    </div>
+                    <div class="col-md-2 col-xs-12 text-center">
+                        <a href="#" target="_blank"><img src="imagenes/footer/ufps.png" style="height: 100px;"></a>
+                    </div>
+                </div>
+          </div>
+    </footer>
+    <script src="jquery/ajax.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/libreria.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
